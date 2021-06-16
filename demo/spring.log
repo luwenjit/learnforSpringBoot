@@ -1,0 +1,36 @@
+2021-06-16 16:13:49.110  INFO 6176 --- [main] c.e.d.DemoApplication                    : Starting DemoApplication using Java 1.8.0_181 on PC-20210518SCYA with PID 6176 (E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo\target\classes started by Administrator in E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo)
+2021-06-16 16:13:49.122  INFO 6176 --- [main] c.e.d.DemoApplication                    : The following profiles are active: dev
+2021-06-16 16:13:50.192  INFO 6176 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2021-06-16 16:13:50.209  INFO 6176 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-06-16 16:13:50.210  INFO 6176 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-16 16:13:50.284  INFO 6176 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-06-16 16:13:50.284  INFO 6176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 976 ms
+2021-06-16 16:13:50.640  INFO 6176 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-16 16:13:50.651  INFO 6176 --- [main] c.e.d.DemoApplication                    : Started DemoApplication in 2.269 seconds (JVM running for 3.515)
+2021-06-16 04:14:41 === main === INFO  === com.example.demo.DemoApplication === Starting DemoApplication using Java 1.8.0_181 on PC-20210518SCYA with PID 6840 (E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo\target\classes started by Administrator in E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo)
+2021-06-16 04:14:41 === main === INFO  === com.example.demo.DemoApplication === The following profiles are active: dev
+2021-06-16 04:14:42 === main === INFO  === org.springframework.boot.web.embedded.tomcat.TomcatWebServer === Tomcat initialized with port(s): 8080 (http)
+2021-06-16 04:14:42 === main === INFO  === org.apache.catalina.core.StandardService === Starting service [Tomcat]
+2021-06-16 04:14:42 === main === INFO  === org.apache.catalina.core.StandardEngine === Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-16 04:14:42 === main === INFO  === org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] === Initializing Spring embedded WebApplicationContext
+2021-06-16 04:14:42 === main === INFO  === org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext === Root WebApplicationContext: initialization completed in 825 ms
+2021-06-16 04:14:43 === main === INFO  === org.springframework.boot.web.embedded.tomcat.TomcatWebServer === Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-16 04:14:43 === main === INFO  === com.example.demo.DemoApplication === Started DemoApplication in 1.91 seconds (JVM running for 2.985)
+2021-06-16 04:17:19 === main === INFO  === com.example.demo.DemoApplication === Starting DemoApplication using Java 1.8.0_181 on PC-20210518SCYA with PID 10880 (E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo\target\classes started by Administrator in E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo)
+2021-06-16 04:17:19 === main === INFO  === com.example.demo.DemoApplication === The following profiles are active: dev
+2021-06-16 04:17:20 === main === INFO  === org.springframework.boot.web.embedded.tomcat.TomcatWebServer === Tomcat initialized with port(s): 8080 (http)
+2021-06-16 04:17:20 === main === INFO  === org.apache.catalina.core.StandardService === Starting service [Tomcat]
+2021-06-16 04:17:20 === main === INFO  === org.apache.catalina.core.StandardEngine === Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-16 04:17:20 === main === INFO  === org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] === Initializing Spring embedded WebApplicationContext
+2021-06-16 04:17:20 === main === INFO  === org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext === Root WebApplicationContext: initialization completed in 720 ms
+2021-06-16 04:17:20 === main === INFO  === org.springframework.boot.web.embedded.tomcat.TomcatWebServer === Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-16 04:17:20 === main === INFO  === com.example.demo.DemoApplication === Started DemoApplication in 1.705 seconds (JVM running for 2.725)
+2021-06-16 04:19:21 === main === INFO  === com.example.demo.DemoApplication === Starting DemoApplication using Java 1.8.0_181 on PC-20210518SCYA with PID 5184 (E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo\target\classes started by Administrator in E:\idea-work\learnforSpringBoot\learnforSpringBoot\demo)
+2021-06-16 04:19:21 === main === INFO  === com.example.demo.DemoApplication === The following profiles are active: dev
+2021-06-16 04:19:22 === main === INFO  === org.springframework.boot.web.embedded.tomcat.TomcatWebServer === Tomcat initialized with port(s): 8080 (http)
+2021-06-16 04:19:22 === main === INFO  === org.apache.catalina.core.StandardService === Starting service [Tomcat]
+2021-06-16 04:19:22 === main === INFO  === org.apache.catalina.core.StandardEngine === Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-16 04:19:22 === main === INFO  === org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] === Initializing Spring embedded WebApplicationContext
+2021-06-16 04:19:22 === main === INFO  === org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext === Root WebApplicationContext: initialization completed in 1019 ms
+2021-06-16 04:19:22 === main === INFO  === org.springframework.boot.web.embedded.tomcat.TomcatWebServer === Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-16 04:19:22 === main === INFO  === com.example.demo.DemoApplication === Started DemoApplication in 2.124 seconds (JVM running for 3.244)
