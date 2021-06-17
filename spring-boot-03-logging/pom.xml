@@ -15,24 +15,26 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-<!--            <exclusions>-->
-<!--                <exclusion>-->
-<!--                    <groupId>ch.qos.logback</groupId>-->
-<!--                    <artifactId>logback-classic</artifactId>-->
-<!--                </exclusion>-->
-<!--                <exclusion>-->
-<!--                    <groupId>org.slf4j</groupId>-->
-<!--                    <artifactId>log4j-over-slf4j</artifactId>-->
-<!--                </exclusion>-->
-<!--            </exclusions>-->
+            <!-- 方式1：注掉spring boot里的依赖，加上slf4j-log4j12 log4j依赖,日志框架切换为log4j，需要增加log4j.properties -->
+            <!--<exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>log4j-over-slf4j</artifactId>
+                </exclusion>
+            </exclusions>-->
 
+            <!-- 方式二：去除logging依赖，加上log4j2，此时就需要切换到log4j2,需要添加log4j2.properties -->
             <!-- 去除以下依赖 为了使用log4j日志框架 -->
             <exclusions>
                 <exclusion>
@@ -42,16 +44,17 @@
             </exclusions>
         </dependency>
 
-        <!-- 以下依赖 为了使用log4j日志框架 -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-log4j12</artifactId>-->
-<!--        </dependency>-->
+        <!-- 以下依赖 为了使用log4j日志框架 -->
+        <!--<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
