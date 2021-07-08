@@ -22,6 +22,10 @@ import java.util.Map;
 @Configuration
 public class DruidConfig {
 
+    /**
+     * 需要配置这个，以使initialSize等属性注入datasource中
+     * @return
+     */
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
     public DataSource druid() {
@@ -32,6 +36,10 @@ public class DruidConfig {
     //1、配置一个管理后台的Servlet
     @Bean
     public ServletRegistrationBean statViewServlet() {
+        /**
+         * 注入servlet，参考之前的项目，手写myservlet,继承HttpServlet，然后通过ServletRegistrationBean注入该servlet
+         * 而这里是通过ServletRegistrationBean注入StatViewServlet【其父类依然是HttpServlet】
+         */
         ServletRegistrationBean bean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         Map<String,String> initParams = new HashMap<>();
 
@@ -47,6 +55,10 @@ public class DruidConfig {
     //2、配置一个web监控的filter
     @Bean
     public FilterRegistrationBean webStatFilter(){
+        /**
+         * 注入filter
+         * 通过FilterRegistrationBean注入WebStatFilter
+         */
         FilterRegistrationBean bean = new FilterRegistrationBean();
         bean.setFilter(new WebStatFilter());
 
@@ -55,6 +67,7 @@ public class DruidConfig {
 
         bean.setInitParameters(initParams);
 
+        // 拦截所有请求
         bean.setUrlPatterns(Arrays.asList("/*"));
 
         return  bean;

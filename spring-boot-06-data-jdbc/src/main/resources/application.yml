@@ -2,9 +2,10 @@ spring:
   datasource:
 #   数据源基本配置
     username: root
-    password: mklmklmkl
-    url: jdbc:mysql://localhost:3306/jdbc
+    password: root
+    url: jdbc:mysql://192.168.31.247:3306/jdbc
     driver-class-name: com.mysql.cj.jdbc.Driver
+    # 自定义数据源【DataSourceConfiguration数据源种类】
     type: com.alibaba.druid.pool.DruidDataSource
     #   数据源其他配置
     initialSize: 5
@@ -23,6 +24,7 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-    #    initialization-mode: always
-    #    schema:
-    #      - classpath:department.sql
+    # spring boot自动初始化脚本，always每次都初始化，EMBEDDED只初始化内存数据库 NEVER不初始化
+#    initialization-mode: always
+    ##    schema:
+    ##      - classpath:department.sql
