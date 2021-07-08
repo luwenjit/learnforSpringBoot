@@ -1,0 +1,47 @@
+配置嵌入式servlet容器
+如tomcat
+    spring boot默认使用tomcat作为嵌入式servlet容器
+
+一、如何定制和修改servlet容器的相关配置
+    1、修改和server有关的配置：【server.properties】
+        server.port=8081
+        server.context-path=/crud
+        server.tomcat.url-encoding=UTF-8
+    2、编写一个EmbeddedServletContainerCustomizer【高版本已变化】
+二、spring boot能不能支持其他servlet容器
+
+
+开发注册servlet三大组件
+ 由于spring boot默认以jar包的方式启动嵌入式servlet容器来启动spring boot应用，没有web.xml文件，注册使用以下方式
+ ServletRegistrationBean
+ FilterRegistrationBean
+ ServletListenerRegistrationBean
+
+
+使用其他嵌入式容器
+    jetty【长连接】
+    undertow 【不支持jsp，并发性能好】
+
+
+使用外置servlet容器
+ 如使用外置tomcat: 应用打成可执行的jar
+    外面安装tomcat
+    步骤：
+        1、必须创建的是war项目
+        2、将嵌入的tomcat指定为provided，或者移除内置tomcat
+        3、必须编写SpringBootServletInitializer的子类，并调用configure方法，传入spring boot主程序
+        4、启动服务器
+    原理：
+        jar包：执行spring boot主类的main方法，启动ioc容器，创建嵌入式servlet容器；
+        war包：启动服务器，服务器启动spring boot应用【SpringBootServletInitializer】，启动ioc；
+        servlet3.0规范：
+
+
+
+ 嵌入式：war
+   优点：简单、便携
+   缺点：默认不支持jsp，优化定制比较复杂（使用定制器【serverproperties】，
+    自定义定制EmbeddedServletContainerCustomizer，自己编写嵌入式servlet容器工厂EmbeddedServletContainerFactory）
+
+
+
