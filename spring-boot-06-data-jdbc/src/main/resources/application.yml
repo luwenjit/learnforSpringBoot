@@ -25,6 +25,6 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
     # spring boot自动初始化脚本，always每次都初始化，EMBEDDED只初始化内存数据库 NEVER不初始化
-#    initialization-mode: always
-    ##    schema:
-    ##      - classpath:department.sql
+    initialization-mode: always
+    schema:
+      - classpath:department.sql
